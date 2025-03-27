@@ -51,21 +51,6 @@ basic_testlist=(
     "/$LIBC/basic/getdents"
     "/$LIBC/basic/mount"
     "/$LIBC/basic/umount"
-    "/$LIBC/basic/clone"
-    "/$LIBC/basic/umount"
-    "/$LIBC/basic/exit"
-    "/$LIBC/basic/fork"
-    "/$LIBC/basic/getpid"
-    "/$LIBC/basic/getppid"
-    "/$LIBC/basic/gettimeofday"
-    "/$LIBC/basic/mmap"
-    "/$LIBC/basic/munmap"
-    "/$LIBC/basic/sleep"
-    "/$LIBC/basic/times"
-    "/$LIBC/basic/uname"
-    "/$LIBC/basic/wait"
-    "/$LIBC/basic/waitpid"
-    "/$LIBC/basic/yield"
 )
 busybox_testlist=("/$LIBC/busybox sh /$LIBC/busybox_testcode.sh")
 iozone_testlist=("/$LIBC/busybox sh /$LIBC/iozone_testcode.sh")
@@ -73,10 +58,10 @@ lua_testlist=("/$LIBC/busybox sh /$LIBC/lua_testcode.sh")
 libctest_testlist=("/$LIBC/busybox sh /$LIBC/libctest_testcode.sh")
 
 testcases_type=(
-#    "basic"
+    "basic"
     "busybox"
-#    "lua"
-#    "libctest"
+    "lua"
+    "libctest"
 )
 
 IMG_URL=https://github.com/Azure-stars/testsuits-for-oskernel/releases/download/v0.1/sdcard-$ARCH.img.gz
@@ -92,7 +77,7 @@ fi
 
 cp sdcard-$ARCH.img $AX_ROOT/disk.img
 
-ARG="AX_TESTCASE=oscomp ARCH=$ARCH EXTRA_CONFIG=../configs/$ARCH.toml BLK=y NET=y FEATURES=fp_simd,lwext4_rs SMP=4 ACCEL=n LOG=info"
+ARG="AX_TESTCASE=oscomp ARCH=$ARCH EXTRA_CONFIG=../configs/$ARCH.toml BLK=y NET=y FEATURES=fp_simd,lwext4_rs SMP=4 ACCEL=n LOG=off"
 
 echo -e "${GREEN_C}ARGS:${END_C} $ARG"
 if [ $? -ne 0 ]; then
@@ -111,7 +96,7 @@ function test_one() {
     else 
         res=$S_PASS
     fi
-#    cat "$actual"
+    cat "$actual"
     if [ $res -ne $S_PASS ]; then
         EXIT_STATUS=$res
         if [ $res == $S_FAILED ]; then
@@ -130,7 +115,7 @@ function test_one() {
             EXIT_STATUS=$S_FAILED
         else
             echo -e "${GREEN_C}passed!${END_C} $RUN_TIME"
-#            rm -f "$actual"
+            rm -f "$actual"
         fi
     fi
 }

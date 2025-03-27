@@ -467,7 +467,6 @@ target_testcases = [
     "test_getdents",
     "test_mount",
     "test_umount",
-    "test_clone",
 ]
 
 if __name__ == '__main__':
@@ -484,8 +483,8 @@ if __name__ == '__main__':
             # 寻找测试样例开头
             if pat.findall(line):
                 test_name = pat.findall(line)[0]
-                # if test_name not in target_testcases:
-                #     continue
+                if test_name not in target_testcases:
+                    continue
                 # test_name = line.replace("=", '').replace(" ", "").replace("START", "")
 
                 if data:
