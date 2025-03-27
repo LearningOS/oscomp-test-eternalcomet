@@ -90,7 +90,7 @@ fn main() {
             "[task manager] User task {} exited with code: {:?}",
             testcase, exit_code
         );
-        println!("#### OS COMP TEST GROUP END basic-musl ####");
-        println!("#### OS COMP TEST GROUP END basic-glibc ####");
     }
+    println!("#### OS COMP TEST GROUP END basic-musl ####");
+    println!("#### OS COMP TEST GROUP END basic-glibc ####");
 }
