@@ -30,7 +30,11 @@ fn main() {
         }
 
         if args[0].starts_with('#') {
-            info!("[task manager] Skipping testcase: {} with args: {:?}", &args[0][1..], args);
+            info!(
+                "[task manager] Skipping testcase: {} with args: {:?}",
+                &args[0][1..],
+                args
+            );
             continue;
         }
 
