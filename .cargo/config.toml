@@ -1,11 +1,11 @@
 [patch.'https://github.com/oscomp/arceos.git']
-axstd = { path = "/home/dragon/os/undefined-os/.arceos/ulib/axstd" }
-arceos_posix_api = { path = "/home/dragon/os/undefined-os/.arceos/api/arceos_posix_api" }
-axhal = { path = "/home/dragon/os/undefined-os/.arceos/modules/axhal" }
-axmm = { path = "/home/dragon/os/undefined-os/.arceos/modules/axmm" }
-axtask = { path = "/home/dragon/os/undefined-os/.arceos/modules/axtask" }
-axsync = { path = "/home/dragon/os/undefined-os/.arceos/modules/axsync" }
-axruntime = { path = "/home/dragon/os/undefined-os/.arceos/modules/axruntime" }
-axns = { path = "/home/dragon/os/undefined-os/.arceos/modules/axns" }
-axfs = { path = "/home/dragon/os/undefined-os/.arceos/modules/axfs" }
-axconfig = { path = "/home/dragon/os/undefined-os/.arceos/modules/axconfig" }
+axstd = { path = "/home/dragon/os/oscomp-test-eternalcomet/.arceos/ulib/axstd" }
+arceos_posix_api = { path = "/home/dragon/os/oscomp-test-eternalcomet/.arceos/api/arceos_posix_api" }
+axhal = { path = "/home/dragon/os/oscomp-test-eternalcomet/.arceos/modules/axhal" }
+axmm = { path = "/home/dragon/os/oscomp-test-eternalcomet/.arceos/modules/axmm" }
+axtask = { path = "/home/dragon/os/oscomp-test-eternalcomet/.arceos/modules/axtask" }
+axsync = { path = "/home/dragon/os/oscomp-test-eternalcomet/.arceos/modules/axsync" }
+axruntime = { path = "/home/dragon/os/oscomp-test-eternalcomet/.arceos/modules/axruntime" }
+axns = { path = "/home/dragon/os/oscomp-test-eternalcomet/.arceos/modules/axns" }
+axfs = { path = "/home/dragon/os/oscomp-test-eternalcomet/.arceos/modules/axfs" }
+axconfig = { path = "/home/dragon/os/oscomp-test-eternalcomet/.arceos/modules/axconfig" }
