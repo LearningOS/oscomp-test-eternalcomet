@@ -1,4 +1,4 @@
-#/musl/busybox echo "#### OS COMP TEST GROUP START basic-glibc ####"
+/musl/busybox echo "#### OS COMP TEST GROUP START basic-glibc ####"
 /musl/busybox echo "#### OS COMP TEST GROUP START basic-musl ####"
 /musl/basic/brk
 /musl/basic/chdir
@@ -116,7 +116,7 @@
 /musl/runtest.exe -w entry-static.exe printf_fmt_g_zeros
 /musl/runtest.exe -w entry-static.exe printf_fmt_n
 /musl/runtest.exe -w entry-static.exe pthread_robust_detach
-#/musl/runtest.exe -w entry-static.exe pthread_cancel_sem_wait
+/musl/runtest.exe -w entry-static.exe pthread_cancel_sem_wait
 /musl/runtest.exe -w entry-static.exe pthread_cond_smasher
 /musl/runtest.exe -w entry-static.exe pthread_condattr_setclock
 /musl/runtest.exe -w entry-static.exe pthread_exit_cancel
@@ -256,7 +256,7 @@
 /musl/busybox echo "#### OS COMP TEST GROUP END libctest-musl ####"
 /musl/busybox echo "#### OS COMP TEST GROUP END libctest-glibc ####"
 /musl/busybox echo "#### OS COMP TEST GROUP START busybox-musl ####"
-/musl/busybox echo "#### OS COMP TEST GROUP END busybox-glibc ####"
+/musl/busybox echo "#### OS COMP TEST GROUP START busybox-glibc ####"
 /musl/busybox echo "#### independent command test"
 /musl/busybox echo testcase busybox echo "#### independent command test" success
 /musl/busybox echo "#### OS COMP TEST GROUP END busybox-glibc ####"
