@@ -261,4 +261,6 @@
 /musl/busybox echo testcase busybox echo "#### independent command test" success
 /musl/busybox echo "#### OS COMP TEST GROUP END busybox-glibc ####"
 /musl/busybox echo "#### OS COMP TEST GROUP END busybox-musl ####"
-#
+/musl/busybox echo "#### OS COMP TEST GROUP START iozone-glibc ####"
+/musl/busybox sh /musl/iozone_testcode.sh
+/musl/busybox echo "#### OS COMP TEST GROUP END iozone-glibc ####"
